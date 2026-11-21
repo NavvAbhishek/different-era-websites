@@ -1,0 +1,295 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>~*~ Welcome 2 My HoMePaGe ~*~</title>
+<style>
+  body {
+    margin: 0;
+    padding: 8px;
+    font-family: "Times New Roman", Times, serif;
+    color: #ffff00;
+    background-color: #000080;
+    /* tiled starfield background */
+    background-image:
+      radial-gradient(1px 1px at 10px 15px, #fff, transparent),
+      radial-gradient(1px 1px at 40px 70px, #fff, transparent),
+      radial-gradient(2px 2px at 80px 30px, #ffffcc, transparent),
+      radial-gradient(1px 1px at 120px 90px, #fff, transparent),
+      radial-gradient(1px 1px at 150px 45px, #ccffff, transparent);
+    background-size: 170px 110px;
+    cursor: crosshair;
+  }
+  a { color: #00ffff; }
+  a:visited { color: #ff00ff; }
+  a:hover { color: #ff0000; background: #ffff00; }
+
+  .blink { animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { visibility: hidden; } }
+
+  .rainbow {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(90deg, red, orange, yellow, lime, cyan, blue, magenta, red);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow 4s linear infinite;
+    margin: 6px 0;
+  }
+  @keyframes rainbow { to { background-position: 400% 0; } }
+
+  .marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    background: #000;
+    border: 3px ridge #c0c0c0;
+    color: #00ff00;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    padding: 4px 0;
+  }
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 18s linear infinite;
+  }
+  @keyframes scroll { to { transform: translateX(-100%); } }
+
+  table.main { width: 100%; max-width: 800px; margin: 0 auto; border-collapse: separate; }
+  td.box {
+    background: #c0c0c0;
+    color: #000;
+    border: 4px outset #ffffff;
+    padding: 8px;
+    vertical-align: top;
+  }
+  td.nav {
+    width: 170px;
+    background: #800080;
+    border: 4px ridge #ff00ff;
+    padding: 8px;
+    vertical-align: top;
+  }
+  td.nav a { display: block; color: #ffff00; font-weight: bold; margin: 6px 0; font-family: "Comic Sans MS", cursive; }
+  td.nav a::before { content: "» "; }
+
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff0000;
+    background: #ffff00;
+    border: 2px dashed #ff0000;
+    padding: 2px 6px;
+    font-size: 20px;
+  }
+  hr.fancy {
+    border: 0;
+    height: 8px;
+    background: repeating-linear-gradient(90deg, red 0 10px, yellow 10px 20px, lime 20px 30px, cyan 30px 40px, magenta 40px 50px);
+    margin: 14px 0;
+  }
+  .construction {
+    display: inline-block;
+    background: repeating-linear-gradient(45deg, #000 0 12px, #ffcc00 12px 24px);
+    padding: 6px;
+    margin: 6px 0;
+  }
+  .construction b {
+    display: block;
+    background: #ffcc00;
+    color: #000;
+    padding: 6px 10px;
+    font-family: Arial, sans-serif;
+  }
+  .counter {
+    display: inline-block;
+    background: #000;
+    color: #00ff00;
+    font-family: "Courier New", monospace;
+    font-size: 22px;
+    letter-spacing: 4px;
+    border: 3px inset #808080;
+    padding: 2px 6px;
+  }
+  .btn {
+    font-family: "MS Sans Serif", Tahoma, sans-serif;
+    font-size: 13px;
+    background: #c0c0c0;
+    border: 2px outset #fff;
+    padding: 3px 12px;
+    cursor: pointer;
+  }
+  .btn:active { border-style: inset; }
+  input[type=text], textarea {
+    font-family: "Courier New", monospace;
+    border: 2px inset #808080;
+    width: 95%;
+    max-width: 380px;
+  }
+  .badge {
+    display: inline-block;
+    width: 88px; height: 31px;
+    font: bold 10px/13px Verdana, sans-serif;
+    text-align: center;
+    border: 1px solid #000;
+    margin: 2px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    vertical-align: middle;
+  }
+  .gb-entry { border-bottom: 1px dotted #000; padding: 4px 0; font-size: 14px; }
+  .small { font-size: 12px; }
+  @media (max-width: 600px) {
+    table.main, table.main tbody, table.main tr, table.main td { display: block; width: auto; }
+    .rainbow { font-size: 28px; }
+  }
+</style>
+</head>
+<body>
+
+<center>
+  <div class="rainbow">~*~ Welcome 2 My HoMePaGe!!! ~*~</div>
+  <p><font size="4" class="blink">★ ★ ★ NEW!!! ★ ★ ★</font></p>
+</center>
+
+<div class="marquee"><span>*** Thank you 4 visiting!!! *** Best viewed in Netscape Navigator 3.0 at 800x600 *** Please sign my guestbook!!! *** This page is Y2K compliant *** Don't forget to bookmark me!!! ***</span></div>
+
+<br>
+
+<table class="main" cellspacing="6">
+<tr>
+  <td class="nav">
+    <center><font face="Comic Sans MS" color="#00ffff"><b><u>NAVIGATION</u></b></font></center>
+    <a href="#about">About Me</a>
+    <a href="#hobbies">My Hobbies</a>
+    <a href="#links">Kool Links</a>
+    <a href="#guestbook">Guestbook</a>
+    <a href="#" onclick="alert('Sorry!! This page is still under construction!!!'); return false;">My Pets</a>
+    <a href="mailto:webmaster@example.com">E-Mail Me!</a>
+    <br>
+    <center>
+      <div class="construction"><b>🚧 UNDER<br>CONSTRUCTION 🚧</b></div>
+      <p class="small"><font color="#ffffff">Last updated:<br>March 14, 1998</font></p>
+    </center>
+  </td>
+
+  <td class="box">
+    <a name="about"></a>
+    <h2>📟 About Me</h2>
+    <p>
+      Hi!!! My name is <b>The Webmaster</b> and this is my <i>totally awesome</i> corner of the
+      <b>Information Superhighway</b>! I made this page all by myself using <tt>Notepad</tt>.
+      It took me 3 whole weekends!!!
+    </p>
+    <p>
+      I am <font color="#0000ff"><b>14 years old</b></font> and I like computers, video games, and
+      surfing the <u>World Wide Web</u> on my brand new <b>56k modem</b>. Please don't pick up the phone while I'm online!! 📞🚫
+    </p>
+
+    <hr class="fancy">
+
+    <a name="hobbies"></a>
+    <h2>🎮 My Hobbies</h2>
+    <ul>
+      <li>Playing games on my Pentium II (233 MHz!!)</li>
+      <li>Chatting in IRC chat rooms</li>
+      <li>Collecting animated GIFs</li>
+      <li>Making mix tapes 📼</li>
+      <li>Burning CDs (when it doesn't fail)</li>
+    </ul>
+
+    <hr class="fancy">
+
+    <a name="links"></a>
+    <h2>🔗 Kool Links</h2>
+    <p>Check out these RAD sites!!!</p>
+    <ol>
+      <li><a href="#links">My friend's homepage</a> <font color="red" class="blink"><b>HOT!</b></font></li>
+      <li><a href="#links">The Ultimate Dinosaur Fan Page</a></li>
+      <li><a href="#links">Cheat Codes Central</a></li>
+      <li><a href="#links">Free Screensavers!!!</a></li>
+    </ol>
+
+    <center>
+      <table border="2" cellpadding="4" bgcolor="#ffffcc">
+        <tr><td align="center">
+          <font face="Arial" size="2">
+            <b>[ &lt;&lt; Prev ]</b> &nbsp; <a href="#links">Cool Kids Webring</a> &nbsp; <b>[ Next &gt;&gt; ]</b><br>
+            <a href="#links">[ Random ]</a> <a href="#links">[ List Sites ]</a>
+          </font>
+        </td></tr>
+      </table>
+    </center>
+
+    <hr class="fancy">
+
+    <a name="guestbook"></a>
+    <h2>📖 Sign My Guestbook!!!</h2>
+    <form onsubmit="signGuestbook(event)">
+      Name:<br><input type="text" id="gbName" maxlength="40" required><br>
+      Message:<br><textarea id="gbMsg" rows="3" maxlength="200" required></textarea><br>
+      <input type="submit" class="btn" value="Submit!">
+      <input type="reset" class="btn" value="Clear">
+    </form>
+    <div id="gbEntries">
+      <div class="gb-entry"><b>CoolDude99</b> wrote: nice page!!! visit mine 2 :)</div>
+      <div class="gb-entry"><b>xX_SkaterGirl_Xx</b> wrote: luv the background!!!!!</div>
+    </div>
+  </td>
+</tr>
+</table>
+
+<br>
+<center>
+  <p>You are visitor number:</p>
+  <div class="counter" id="counter">000000</div>
+  <p class="small"><font color="#ffffff">(since January 1997)</font></p>
+
+  <br>
+  <span class="badge" style="background:#000;color:#0f0;">Made with<br>NOTEPAD</span>
+  <span class="badge" style="background:#fff;color:#00f;">Best viewed in<br>NETSCAPE 3.0</span>
+  <span class="badge" style="background:#008080;color:#ff0;">Y2K<br>COMPLIANT ✔</span>
+  <span class="badge" style="background:#f0f;color:#fff;">GET FREE<br>WEB SPACE!</span>
+
+  <p class="small"><font color="#c0c0c0">
+    © 1998 The Webmaster. All rights reserved. No part of this page may be copied without permission!!!<br>
+    This page has been optimized for 800x600 resolution and 256 colors.
+  </font></p>
+</center>
+
+<script>
+  // Fake hit counter that goes up each visit
+  (function () {
+    var base = 31337, n = 0;
+    try { n = parseInt(localStorage.getItem('hits') || '0', 10) + 1; localStorage.setItem('hits', n); } catch (e) {}
+    var s = String(base + n);
+    while (s.length < 6) s = '0' + s;
+    document.getElementById('counter').textContent = s;
+  })();
+
+  function signGuestbook(e) {
+    e.preventDefault();
+    var name = document.getElementById('gbName').value;
+    var msg = document.getElementById('gbMsg').value;
+    var div = document.createElement('div');
+    div.className = 'gb-entry';
+    var b = document.createElement('b');
+    b.textContent = name;
+    div.appendChild(b);
+    div.appendChild(document.createTextNode(' wrote: ' + msg));
+    document.getElementById('gbEntries').prepend(div);
+    e.target.reset();
+    alert('Thank you 4 signing my guestbook!!!');
+  }
+
+  // Status bar style greeting
+  window.addEventListener('load', function () {
+    document.title = '~*~ Welcome 2 My HoMePaGe ~*~';
+  });
+</script>
+
+</body>
+</html>
