@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Webmaster's Space - Home</title>
+<style type="text/css">
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Tahoma, Arial, sans-serif;
+    font-size: 12px;
+    color: #333;
+    background: #5b8fc9 url() repeat-x;
+    background-image: linear-gradient(#2a5d9f 0, #5b8fc9 260px, #cfe0f3 600px);
+    background-color: #cfe0f3;
+    background-attachment: fixed;
+  }
+  a { color: #0066cc; text-decoration: none; }
+  a:hover { color: #ff6600; text-decoration: underline; }
+
+  #wrap { width: 900px; max-width: 100%; margin: 0 auto; }
+
+  /* top bar */
+  #topbar {
+    background: #1b3f73;
+    background-image: linear-gradient(#2d5fa8, #17376a);
+    color: #cfe0f3;
+    font-size: 11px;
+    padding: 4px 12px;
+    border-bottom: 1px solid #0d2447;
+  }
+  #topbar a { color: #fff; margin: 0 4px; }
+  #topbar .right { float: right; }
+
+  /* header */
+  #header {
+    padding: 18px 12px 10px;
+    overflow: hidden;
+  }
+  #logo {
+    float: left;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 3px #0d2447;
+  }
+  #logo em { color: #ffb43a; font-style: normal; }
+  #logo small {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0;
+    color: #dbe8f7;
+    text-shadow: 1px 1px 1px #0d2447;
+  }
+  #search { float: right; margin-top: 14px; }
+  #search input.q {
+    width: 160px; padding: 4px 6px;
+    border: 1px solid #0d2447; border-radius: 4px;
+    font: 12px Verdana, sans-serif;
+  }
+
+  /* nav tabs */
+  #nav { margin: 0; padding: 0 12px; list-style: none; overflow: hidden; }
+  #nav li { float: left; margin-right: 3px; }
+  #nav li a {
+    display: block;
+    padding: 7px 18px;
+    font-weight: bold;
+    color: #fff;
+    background-image: linear-gradient(#5f93d4, #2f66b0);
+    border: 1px solid #1b3f73;
+    border-bottom: 0;
+    border-radius: 8px 8px 0 0;
+    text-shadow: 0 -1px 0 #1b3f73;
+  }
+  #nav li a:hover { text-decoration: none; background-image: linear-gradient(#ffc766, #ff8c1a); text-shadow: 0 -1px 0 #b35a00; }
+  #nav li.on a { background: #fff; color: #1b3f73; text-shadow: none; }
+
+  /* panel */
+  #page {
+    background: #fff;
+    border: 1px solid #1b3f73;
+    border-radius: 0 6px 6px 6px;
+    box-shadow: 0 4px 14px rgba(0,0,0,.35);
+    padding: 12px;
+    overflow: hidden;
+  }
+  #banner {
+    background-image: linear-gradient(#fff7d6, #ffe38a);
+    border: 1px solid #e0b73c;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #7a5a00;
+  }
+  #banner .new {
+    display: inline-block;
+    background-image: linear-gradient(#ff8a3d, #e04a00);
+    color: #fff;
+    border-radius: 10px;
+    padding: 1px 8px;
+    margin-right: 6px;
+    font-size: 10px;
+    text-shadow: 0 -1px 0 #902c00;
+  }
+
+  #sidebar { float: left; width: 200px; }
+  #content { margin-left: 214px; }
+
+  .module {
+    border: 1px solid #b9cfe8;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    background: #f5f9fe;
+    overflow: hidden;
+  }
+  .module h2, .module h3 {
+    margin: 0;
+    padding: 6px 10px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    background-image: linear-gradient(#5f93d4, #2f66b0);
+    border-bottom: 1px solid #1b3f73;
+    text-shadow: 0 -1px 0 #1b3f73;
+  }
+  .module h2 { font-size: 16px; }
+  .module .body { padding: 10px; line-height: 1.55; }
+  .module ul { margin: 0; padding-left: 0; list-style: none; }
+  .module ul.side li { border-bottom: 1px solid #dbe6f3; }
+  .module ul.side li a { display: block; padding: 6px 4px 6px 22px; background: no-repeat 4px center; font-weight: bold; }
+  .module ul.side li a:hover { background-color: #fff0cc; text-decoration: none; }
+  .module ul.side li a:before { content: "\25B8\00a0"; color: #ff8c1a; margin-left: -16px; }
+  .module ul.bul { list-style: none; }
+  .module ul.bul li { padding: 3px 0 3px 18px; background: none; position: relative; }
+  .module ul.bul li:before { content: "\2714"; position: absolute; left: 0; color: #3a9d23; }
+
+  /* profile card */
+  .avatar {
+    width: 90px; height: 90px; margin: 0 auto 8px;
+    border: 3px solid #fff; border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.5);
+    background-image: linear-gradient(135deg, #5f93d4, #ffb43a);
+    font-size: 48px; line-height: 90px; text-align: center; color: #fff;
+  }
+  .status { text-align: center; font-size: 11px; color: #555; }
+  .online { color: #3a9d23; font-weight: bold; }
+
+  /* buttons */
+  .button, input.button {
+    font: bold 12px Verdana, sans-serif;
+    color: #fff;
+    padding: 5px 16px;
+    border: 1px solid #b35a00;
+    border-radius: 14px;
+    background-image: linear-gradient(#ffc766, #ff8c1a 50%, #f07400 51%, #ff9d33);
+    text-shadow: 0 -1px 0 #b35a00;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,.6);
+  }
+  .button:hover { background-image: linear-gradient(#ffd98a, #ffa040 50%, #ff8c1a 51%, #ffb04d); }
+  .button.gray {
+    border-color: #777;
+    background-image: linear-gradient(#fff, #ddd 50%, #ccc 51%, #e6e6e6);
+    color: #333; text-shadow: none;
+  }
+  input.text, textarea {
+    font: 12px Verdana, sans-serif;
+    border: 1px solid #8aa7c9;
+    border-radius: 4px;
+    padding: 4px 6px;
+    width: 95%;
+    max-width: 400px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.2);
+  }
+  input.text:focus, textarea:focus { border-color: #ff8c1a; outline: 0; background: #fffdf5; }
+  label { font-weight: bold; }
+
+  /* links list */
+  ol.links { margin: 0; padding-left: 24px; }
+  ol.links li { padding: 4px 0; }
+  .tag-hot {
+    display: inline-block; font-size: 9px; font-weight: bold; color: #fff;
+    background-image: linear-gradient(#ff5a5a, #c40000);
+    border-radius: 3px; padding: 0 5px; vertical-align: middle;
+  }
+
+  .webring {
+    border: 1px solid #e0b73c; border-radius: 6px;
+    background-image: linear-gradient(#fffbe6, #fff0b3);
+    text-align: center; padding: 8px; margin-top: 8px;
+  }
+
+  /* guestbook */
+  .comment {
+    border: 1px solid #dbe6f3; border-radius: 6px;
+    background: #fff; padding: 8px 10px 8px 56px; margin-bottom: 8px;
+    position: relative; min-height: 24px;
+  }
+  .comment .pic {
+    position: absolute; left: 8px; top: 8px; width: 36px; height: 36px;
+    border-radius: 5px; border: 2px solid #fff; box-shadow: 0 0 3px rgba(0,0,0,.5);
+    color: #fff; font-weight: bold; font-size: 18px; line-height: 36px; text-align: center;
+    background-image: linear-gradient(#5f93d4, #2f66b0);
+  }
+  .comment .who { font-weight: bold; color: #0066cc; }
+  .comment .when { color: #888; font-size: 10px; float: right; }
+
+  /* counter */
+  .counter {
+    display: inline-block;
+    font: bold 20px "Courier New", monospace;
+    letter-spacing: 3px;
+    color: #9fe870;
+    background-image: linear-gradient(#222, #000);
+    border: 1px solid #555; border-radius: 5px;
+    padding: 3px 10px;
+    box-shadow: inset 0 0 6px #000;
+  }
+
+  /* badges */
+  .badge {
+    display: inline-block;
+    width: 88px; height: 31px; margin: 2px;
+    box-sizing: border-box;
+    font: bold 9px/12px Verdana, sans-serif;
+    text-align: center; color: #fff;
+    border: 1px solid #333; border-radius: 4px;
+    padding-top: 3px; vertical-align: middle;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.5);
+  }
+  .rss { background-image: linear-gradient(#ffa24d, #ee6a00); }
+  .xhtml { background-image: linear-gradient(#6aa7ea, #1f5aa6); }
+  .ff { background-image: linear-gradient(#ff9a3d, #c04a00); }
+  .web2 { background-image: linear-gradient(#8ad04f, #3a8a14); }
+
+  #footer { text-align: center; color: #3a557d; font-size: 11px; padding: 14px 0 24px; line-height: 1.6; }
+  #footer a { color: #1b3f73; }
+  .clear { clear: both; }
+
+  @media (max-width: 700px) {
+    #sidebar { float: none; width: auto; }
+    #content { margin-left: 0; }
+    #logo, #search { float: none; }
+    #logo { font-size: 30px; }
+    #topbar .right { float: none; }
+    #nav li { float: none; }
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+
+  <div id="topbar">
+    <span class="right">Hello, Guest! <a href="#guestbook">Sign Up</a> | <a href="#guestbook">Log In</a> | <a href="#">Help</a></span>
+    <a href="#">Make this your homepage</a> | <a href="#">Add to Favorites</a>
+    <div class="clear"></div>
+  </div>
+
+  <div id="header">
+    <div id="logo">The Webmaster's <em>Space</em><small>Your place for friends, music &amp; fun &mdash; now with Web 2.0!</small></div>
+    <form id="search" action="#" onsubmit="alert('Search is coming soon!'); return false;">
+      <input type="text" class="q" value="Search my site..." onfocus="if(this.value==='Search my site...')this.value=''" />
+      <input type="submit" class="button gray" value="Go" />
+    </form>
+  </div>
+
+  <ul id="nav">
+    <li class="on"><a href="#top">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#hobbies">My Hobbies</a></li>
+    <li><a href="#links">Cool Links</a></li>
+    <li><a href="#guestbook">Guestbook</a></li>
+    <li><a href="#" onclick="alert('Sorry! This page is still under construction. Please check back soon!'); return false;">My Pets</a></li>
+    <li><a href="mailto:webmaster@example.com">Contact</a></li>
+  </ul>
+
+  <div id="page">
+    <a name="top"></a>
+    <div id="banner"><span class="new">NEW!</span> Welcome to my brand new site! Now with a guestbook, comments and a cool new layout. Thanks for stopping by!</div>
+
+    <div id="sidebar">
+      <div class="module">
+        <h3>The Webmaster</h3>
+        <div class="body">
+          <div class="avatar">&#9786;</div>
+          <div class="status"><span class="online">&#9679; Online Now</span><br />
+          Mood: &#9835; hyped<br />
+          Listening to: my iPod
+          </div>
+        </div>
+      </div>
+
+      <div class="module">
+        <h3>Navigation</h3>
+        <ul class="side">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#hobbies">My Hobbies</a></li>
+          <li><a href="#links">Cool Links</a></li>
+          <li><a href="#guestbook">Guestbook</a></li>
+          <li><a href="#" onclick="alert('Sorry! This page is still under construction. Please check back soon!'); return false;">My Pets</a></li>
+          <li><a href="mailto:webmaster@example.com">E-Mail Me!</a></li>
+        </ul>
+      </div>
+
+      <div class="module">
+        <h3>Site Info</h3>
+        <div class="body" style="text-align:center;">
+          <b>&#9888; Beta</b><br />
+          More pages coming soon!<br /><br />
+          Last updated:<br /><b>June 12, 2006</b>
+        </div>
+      </div>
+    </div>
+
+    <div id="content">
+      <div class="module">
+        <a name="about"></a>
+        <h2>About Me</h2>
+        <div class="body">
+          <p style="margin-top:0">
+            Hi there! My name is <b>The Webmaster</b> and this is my <i>totally awesome</i> corner of the
+            <b>internet</b>! I built this site all by myself using <b>Dreamweaver</b> and a lot of free time.
+            It took me 3 whole weekends (and a few cans of soda)!
+          </p>
+          <p style="margin-bottom:0">
+            I am <b style="color:#0066cc">14 years old</b> and I love computers, video games, and
+            browsing the web on my <b>broadband connection</b> (finally no more dial-up!).
+            You can add me as a friend or leave me a comment below.
+          </p>
+        </div>
+      </div>
+
+      <div class="module">
+        <a name="hobbies"></a>
+        <h2>My Hobbies</h2>
+        <div class="body">
+          <ul class="bul">
+            <li>Playing games on my Pentium 4 (3.0 GHz!)</li>
+            <li>Chatting on MSN Messenger and AIM</li>
+            <li>Downloading music for my iPod</li>
+            <li>Making custom playlists and burning mix CDs</li>
+            <li>Uploading photos and videos online</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="module">
+        <a name="links"></a>
+        <h2>Cool Links</h2>
+        <div class="body">
+          <p style="margin-top:0">Check out these awesome sites!</p>
+          <ol class="links">
+            <li><a href="#links">My friend's page</a> <span class="tag-hot">HOT</span></li>
+            <li><a href="#links">The Ultimate Dinosaur Fan Site</a></li>
+            <li><a href="#links">Cheat Codes Central</a></li>
+            <li><a href="#links">Free Screensavers &amp; Wallpapers</a></li>
+          </ol>
+          <div class="webring">
+            <b>&laquo; <a href="#links">Prev</a></b> &nbsp;|&nbsp; <a href="#links"><b>Cool Kids Webring</b></a> &nbsp;|&nbsp; <b><a href="#links">Next</a> &raquo;</b><br />
+            <a href="#links">Random</a> &bull; <a href="#links">List Sites</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="module">
+        <a name="guestbook"></a>
+        <h2>Sign My Guestbook</h2>
+        <div class="body">
+          <form onsubmit="signGuestbook(event)" action="#">
+            <label for="gbName">Your Name:</label><br />
+            <input type="text" class="text" id="gbName" maxlength="40" required="required" /><br /><br />
+            <label for="gbMsg">Your Comment:</label><br />
+            <textarea id="gbMsg" rows="3" maxlength="200" required="required"></textarea><br /><br />
+            <input type="submit" class="button" value="Post Comment" />
+            <input type="reset" class="button gray" value="Clear" />
+          </form>
+          <h4 style="margin:14px 0 6px; color:#1b3f73;">Comments (<span id="gbCount">2</span>)</h4>
+          <div id="gbEntries">
+            <div class="comment"><div class="pic">C</div><span class="when">Jun 10, 2006</span><span class="who">CoolDude99</span><br />nice page!! add me as a friend :)</div>
+            <div class="comment"><div class="pic" style="background-image:linear-gradient(#ff9ad5,#d0267c)">X</div><span class="when">Jun 9, 2006</span><span class="who">xX_SkaterGirl_Xx</span><br />luv the layout!! comment back lol</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+
+  <div id="footer">
+    <p>You are visitor number:<br />
+    <span class="counter" id="counter">000000</span><br />
+    <small>(since January 2004)</small></p>
+
+    <p>
+      <span class="badge rss">RSS<br />SUBSCRIBE</span>
+      <span class="badge xhtml">VALID<br />XHTML 1.0</span>
+      <span class="badge ff">GET<br />FIREFOX</span>
+      <span class="badge web2">WEB 2.0<br />READY</span>
+    </p>
+
+    <p>
+      <a href="#">About</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Sitemap</a> | <a href="mailto:webmaster@example.com">Contact</a><br />
+      &copy; 2006 The Webmaster's Space. All rights reserved.<br />
+      Best viewed in Internet Explorer 6 or Firefox 1.5 at 1024x768 resolution.
+    </p>
+  </div>
+</div>
+
+<script type="text/javascript">
+  // Hit counter that goes up each visit
+  (function () {
+    var base = 48213, n = 0;
+    try { n = parseInt(localStorage.getItem('hits2000s') || '0', 10) + 1; localStorage.setItem('hits2000s', n); } catch (e) {}
+    var s = String(base + n);
+    while (s.length < 6) s = '0' + s;
+    document.getElementById('counter').textContent = s;
+  })();
+
+  function signGuestbook(e) {
+    e.preventDefault();
+    var name = document.getElementById('gbName').value;
+    var msg = document.getElementById('gbMsg').value;
+    var div = document.createElement('div');
+    div.className = 'comment';
+    var pic = document.createElement('div');
+    pic.className = 'pic';
+    pic.textContent = (name.charAt(0) || '?').toUpperCase();
+    var when = document.createElement('span');
+    when.className = 'when';
+    when.textContent = 'Just now';
+    var who = document.createElement('span');
+    who.className = 'who';
+    who.textContent = name;
+    div.appendChild(pic);
+    div.appendChild(when);
+    div.appendChild(who);
+    div.appendChild(document.createElement('br'));
+    div.appendChild(document.createTextNode(msg));
+    document.getElementById('gbEntries').insertBefore(div, document.getElementById('gbEntries').firstChild);
+    var c = document.getElementById('gbCount');
+    c.textContent = parseInt(c.textContent, 10) + 1;
+    e.target.reset();
+    alert('Thanks for signing my guestbook!');
+  }
+</script>
+</body>
+</html>
